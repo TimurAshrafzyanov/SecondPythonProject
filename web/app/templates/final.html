@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+    {% if error %}
+    <h1>{{ message }}</h1>
+    {% else %}
+    <h1>Weather forecast for city {{ name }} :</h1>
+    <h1>temperature : {{ temp }} &#8451</h1>
+    <h1>pressure    : {{ pres }} hPa</h1>
+    <h1>humidity    : {{ hum }} %</h1>
+    {% endif %}
+{% endblock %}

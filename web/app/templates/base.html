@@ -1,0 +1,18 @@
+<html style="text-align:center">
+    <head>
+      {% if title %}
+      <title>{{ title }} - web project</title>
+      {% else %}
+      <title>Welcome to web project</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>
+            Weather forecast server: 
+            <a href="/">Home</a>
+            <a href="/choise">Choose menu</a>
+        </div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
